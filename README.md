@@ -1,1 +1,7 @@
-# pecos-dakota
+# Parallel Environment for the Creation of Stochastics 1.0
+
+SCR# 1372
+
+PECOS is a computational library for creating and manipulating realizations of stochastic quantities, including scalar uncertain variables, random fields, and stochastic processes. It offers a unified interface to univariate and multivariate polynomial approximations using either orthogonal or interpolation polynomials; numerical integration drivers for Latin hypercube sampling, quadrature, cubature, and sparse grids; and fast Fourier transforms using third party libraries. The PECOS core also offers statistical utilities and transformations between various representations of stochastic uncertainty. PECOS provides a C++ API through which users can generate and transform realizations of stochastic quantities. It is currently used by Sandia's DAKOTA, Stokhos, and Encore software packages for uncertainty quantification and verification. PECOS generates random sample sets and multi-dimensional integration grids, typically used in forward propagation of scalar uncertainty in computational models (uncertainty quantification (UQ)). PECOS also generates samples of random fields (RFs) and stochastic processes (SPs) from a set of user-defined power spectral densities (PSDs). The RF/SP may be either Gaussian or non-Gaussian and either stationary or nonstationary, and the resulting sample is intended for run-time query by parallel finite element simulation codes. Finally, PECOS supports nonlinear transformations of random variables via the Nataf transformation and extensions.
+
+Brian Adams and Adam Stephens
